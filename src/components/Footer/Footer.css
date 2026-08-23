@@ -1,0 +1,42 @@
+.footer{
+    background-color: var(--color-dark);
+    color: var(--color-text-secondary);
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    
+}
+.footer .container .footer-brand {
+    flex: 1;
+}
+.footer .container h3{
+    color:var(--color-text-light);
+    padding: 20px 0;
+}
+.footer .container .copyright{
+    color: var(--color-text-secondary);
+}
+.footer .container .company,
+.footer .container .customer,
+.footer .container .support
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+}
+
+.footer .container p{
+    color: var(--color-text-light);
+}
+.footer .container a{
+    color:var(--color-text-secondary);
+    transition: color var(--transition-fast);
+}
+.footer .container a:hover{
+    color: var(--color-primary-hover);
+}
