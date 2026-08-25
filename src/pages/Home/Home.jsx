@@ -1,8 +1,9 @@
+import Button from "../../components/Button/Button";
 
 export default function Home(){
     return(
         <>
-        <h1>Home Page</h1>
+        <h1>home page</h1>
         </>
     )
 }

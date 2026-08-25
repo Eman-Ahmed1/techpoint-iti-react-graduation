@@ -1,0 +1,29 @@
+.contact{
+    padding: 20px;
+    background-color: var(--color-background-secondary);
+}
+.contact .contactTop{
+    margin-bottom: 20px;
+}
+.contact .contactBottom{
+    display: flex;
+}
+.contact .contactBottom .contactForm{
+    width: 50%;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    padding: 30px;
+    
+}
+.contact .contactBottom .contactForm form{
+    display: flex;
+    flex-direction: column;
+}
+.contact .contactBottom .contactForm form input{
+    /* padding: 10px; */
+
+}

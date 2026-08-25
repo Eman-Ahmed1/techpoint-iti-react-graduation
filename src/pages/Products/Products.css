@@ -1,0 +1,113 @@
+.productsPage{
+    background-color: var(--color-background-secondary);
+    padding: 40px 20px;
+}
+.productsPage .breadcrumb{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10PX 0;
+}
+.productsPage .breadcrumb a{
+    color: var(--color-text-secondary);
+}
+/* pageHeader */
+.productsPage .pageHeader{
+   padding: 10px 0; 
+   width:50% ;
+}
+.productsPage .pageHeader h1{
+    color: var(--color-text);
+    padding-bottom: 10px;
+}
+.productsPage .pageHeader p{
+    color: var(--color-text-secondary);
+    padding-bottom: 20px;
+}
+/* products Controls */
+.productsPage .productsControls{
+    background-color: var(--color-background);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+.productsPage .productsControls .productsControlsLift{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.productsPage .productsControls .productsControlsRight{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.productsPage .productsControls select{
+    border: 1px solid var(--color-border);
+    padding: 5px;
+    background-color: var(--color-background-secondary);
+    border-radius: var(--radius-md);
+}
+
+.productsPage .productsControls input{
+    border: 1px solid var(--color-border);
+    width: 70px;
+    padding: 5px;
+    background-color: var(--color-background-secondary);
+    border-radius: var(--radius-md);
+}
+.productsPage .productsControls .productsLength{
+    color: var(--color-text-secondary);
+    font-size: 10px;
+    
+}
+/* products */
+.productsPage .products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.productsPage .loadMore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.productsPage .loadMore button{
+    font-size:10px;
+    font-weight: 700;
+    padding:  10px 25px  ;
+
+}
+.productsPage .loadMore button:hover{
+    background-color: var(--color-primary-hover);
+}
+@media (max-width: 1025px) {
+    .productsPage  .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .container {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .productsPage  .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 460px) {
+    .productsPage .productsControls .productsControlsRight,
+    .productsPage .productsControls .productsControlsLift{
+        flex-wrap: wrap;
+    }
+}

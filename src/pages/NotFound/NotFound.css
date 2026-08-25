@@ -1,0 +1,54 @@
+.notFound{
+    min-height: 100vh;/**/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: var(--color-background-secondary);
+}
+.notFound .notFoundLogo{
+    color: var(--color-text);
+    font-size: 22px;
+    font-weight: 700;
+}
+.notFound .notFoundCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+    max-width: 450px;
+    width: 100%;
+    margin: auto  0;
+}
+.notFoundCard .notFound404{
+    font-size: 100px;
+}
+.notFoundCard h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.notFoundCard p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+    max-width: 380px;
+
+}
+.notFoundCard .btn Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 55px;
+    font-weight: 400 ;
+    font-size: 14px ;
+    box-shadow: var(--shadow-md);
+}
+.notFoundCard .btn Button:hover{
+    background-color: var(--color-primary-hover);
+}

@@ -1,6 +1,7 @@
 .navbar{
     background-color: var(--color-background-secondary);
     padding: 10px;
+    border-bottom: 1px solid #c7cbd1;
 }
 .navbar .container{
     display: flex;
@@ -42,12 +43,24 @@
     background: transparent;
     color: var(--color-text);
 }
+@media (max-width:765px) {
+    .navbar .container .navbarSearch{
+        display: none;
+    }
+    
+}
 /* nav */
  .navbar nav ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap:20px;
+}
+@media (max-width:1025px){
+    nav{
+        display: none;
+    }
+    
 }
 .navbar .container nav ul a{
     color:var(--color-text-secondary);
