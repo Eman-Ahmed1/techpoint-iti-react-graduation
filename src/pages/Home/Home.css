@@ -1,0 +1,280 @@
+.homePage .heroSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px 0;
+    min-height: 500px;
+}
+.heroSection .heroText{
+    flex: 1;
+    max-width: 520px;
+}
+.heroSection .heroText h1 {
+    color: var(--color-text);
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.heroSection .heroText p {
+    color: var(--color-text-secondary);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.heroSection .heroText .heroTextBTN{
+    display: flex;
+    gap: 10px;
+}
+.heroSection .heroText .heroTextBTN .btn {
+    display: flex;
+}
+.heroSection .heroText .heroTextBTN .btn:last-child{
+    background-color: var(--color-background);
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+.heroSection .heroText .heroTextBTN .btn:last-child:hover{
+    background-color: var(--color-primary);
+}
+.heroSection .heroImg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.heroSection .heroImg img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    height: 350px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+@media (max-Width: 1190px){
+    .homePage .heroSection{
+        flex-direction: column;
+    }
+}
+/* Category */
+.homePage .homeCategory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.homePage .homeCategory .homeCategoryTitle{
+    color: var(--color-text);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.homePage .homeCategory .homeCategoryParg{
+    color: var(--color-text-secondary);
+}
+.homePage .homeCategory .category{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 30px ;
+}
+.homePage .homeCategory .category div{
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+/* Dark transparent overlay on category images  */
+.homePage .homeCategory .category div::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( to bottom, rgba(15, 35, 65, 0), rgba(60, 66, 74, 0.8) );
+    }
+    .homePage .homeCategory .category div img{
+        width: 100%;
+        height: 220px;
+        display: block;
+        object-fit: cover;
+        transition: 0.5s ease;
+}
+.homePage .homeCategory .category div:hover img {
+    transform: scale(1.05);
+}
+.homePage .homeCategory .category div p{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: var(--color-text-light);
+    z-index: 1;
+}
+@media (max-width: 1190px){
+    .homePage .homeCategory .category{
+     grid-template-columns: repeat(2, 1fr);   
+    }
+}
+@media (max-width: 760px){
+    .homePage .homeCategory .category{
+     grid-template-columns: repeat(1, 1fr); 
+     width: 80%;
+       
+    }
+}
+/* Featured Products */
+.homePage .featuredProducts{
+    margin-top: 80px;
+}
+.homePage .featuredProducts .products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.homePage .featuredProducts .viewAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homePage .featuredProducts .viewAll .btn{
+    background-color: var(--color-background);
+    margin: 30px;
+}
+.homePage .featuredProducts .viewAll button:hover{
+    background-color: var(--color-primary);
+}
+@media (max-width: 1190px) {
+    .homePage .featuredProducts h2,.homePage .featuredProducts p{
+        padding-left: 60px;
+    }
+    .homePage .featuredProducts  .products {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+        margin: auto;
+    }
+    .container {
+        width: 95%;
+        max-width: none;
+    }
+}
+@media (max-width: 760px) {
+    .homePage .featuredProducts .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* FindDevice  */
+.homePage .findDevice{
+    background-color: var(--color-dark);
+}
+.homePage .findDevice .container{
+    background-color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+.homePage .findDevice .findDeviceText h2{
+    color: var(--color-text-light);
+    font-size: 40px;
+}
+.homePage .findDevice .findDeviceText p{
+    color: var(--color-text-secondary);  
+    font-size: 24px; 
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+.homePage .findDevice .findDeviceText .btn{
+    border: none;
+    padding: 20px 25px;
+    font-size: 16px;
+}
+.homePage .findDevice .findDeviceImg {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.homePage .findDevice .findDeviceImg::after{
+     content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(5, 21, 52, 0.725);
+}
+.homePage .findDevice .findDeviceImg img{
+    width: 100%;
+    border-radius: var( --radius-lg);
+}
+@media (max-width: 1190px) {
+    .homePage .findDevice .container {
+        width: 80%;
+        max-width: none;
+    }
+}
+/* whyTechPoint */
+.homePage .whyTechPoint{
+    margin: 100px;
+}
+.homePage .whyTechPoint .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homePage .whyTechPoint .container h2{
+    padding: 40px;
+    font-size: 30px;
+}
+.homePage .whyTechPoint .container .whyTechPointSec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.whyTechPointSec div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+@media (max-width: 765px){
+    .whyTechPointSec {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: 500px;
+    }
+}
+.whyTechPointSec div .icon{
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: var(--color-background-secondary);
+}
+.whyTechPointSec div .des{
+    color: var(--color-text-secondary);
+}
+/* homeBottom */
+.homePage .homeBottom .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 150px 0;
+     border-top: 1px solid var(--color-border);
+}
+.homePage .homeBottom .container h2{
+    font-size: 35px;
+    padding: 15px;
+}
+.homePage .homeBottom .container p{
+    font-size: 18px;
+    color: var(--color-text-secondary);
+    padding:  15px 0 30px 0;
+}
+.homePage .homeBottom .container .btn{
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: 500;
+}

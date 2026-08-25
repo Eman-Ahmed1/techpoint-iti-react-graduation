@@ -1,4 +1,4 @@
-button{
+.btn{
     background-color: var(--color-primary);
     color: var(--color-text);
     padding: 10px;
@@ -7,6 +7,6 @@ button{
     cursor: pointer;
     transition: background-color var(--transition-fast);
 }
-.button:hover {
+.btn:hover {
     background-color: var(--color-primary-hover);
 }

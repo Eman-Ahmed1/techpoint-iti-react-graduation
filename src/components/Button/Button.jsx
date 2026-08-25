@@ -1,8 +1,14 @@
+import { Link } from 'react-router-dom'
 import './Button.css'
-export default function Button({ children }){
+export default function Button({ children, to }){
+    if(to){
+        return (
+            <Link to={to} className='btn'>{children}</Link>
+        )
+    }
     return(
         <>
-        <button>{ children }</button>
+        <button className='btn'>{ children }</button>
         </>
     )
 }
