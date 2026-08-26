@@ -1,0 +1,211 @@
+.productDetails {
+    background-color: var(--color-background-secondary);
+    padding: 40px 20px;
+}
+.productDetails .breadcrumb{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 20px 0;
+}
+.productDetails .breadcrumb a{
+    color: var(--color-text-secondary)
+}
+.productDetails .breadcrumb p{
+    color: var(--color-dark)
+}
+/* sectionMain */
+.productDetails .sectionMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:50px;
+    padding-bottom:60px ;
+    border-bottom: 1px solid var( --color-border);
+}
+.productDetails .sectionMain .productImages{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.productDetails .sectionMain .productImages .mainimg{
+    background-color: var(--color-background);
+    width: 100%;
+    height: 500px;
+    border-radius: var( --radius-lg);
+    border: 1px solid var(  --color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.productDetails .sectionMain .productImages .mainimg img{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+.productDetails .sectionMain .productImages .images{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.productDetails .sectionMain .productImages .images img{
+    width: 32%;
+    height: 100px;
+    border-radius: var( --radius-lg);
+    border: 1px solid var(  --color-border);
+    object-fit:contain ;
+    cursor: pointer;
+    background-color: var(--color-background);
+    
+}
+.productDetails .sectionMain .productInfo{
+    width: 50%;
+    padding-right: 20px;
+}
+.productDetails .sectionMain .productInfo .infoLogo{
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+}
+.productDetails .sectionMain .productInfo .infoTitle{
+    color: var(--color-text);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.productDetails .sectionMain .productInfo .infoRating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 18PX;
+}
+.productDetails .sectionMain .productInfo .infoRating span{
+    color: var(--color-primary);
+}
+.productDetails .sectionMain .productInfo .infoPrice{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25PX;
+}
+.productDetails .sectionMain .productInfo .infoDesc{
+    color: var(--color-text-secondary);
+    margin-bottom: 25px;
+}
+.productDetails .sectionMain .productInfo .infoIsAvailable{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.productDetails .sectionMain .productInfo .infoNotAvailable{
+    color: red;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.productDetails .sectionMain .productInfo .infoActions{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.productDetails .sectionMain .productInfo .infoActions .infoCount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    width:20% ;
+    height:50px;
+    border-radius: var( --radius-md);
+}
+.productDetails .sectionMain .productInfo .infoActions .infoCount div{
+    border: 1px solid var(--color-border);
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.productDetails .sectionMain .productInfo .infoActions .infoCount .decreaseCount:hover,
+.productDetails .sectionMain .productInfo .infoActions .infoCount .increaseCount:hover{
+    background-color:  var(--color-background-secondary);
+}
+.productDetails .sectionMain .productInfo .infoActions .btnAdd{
+    width: 60%;
+}
+.productDetails .sectionMain .productInfo .infoActions .btnAdd button{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.productDetails .sectionMain .productInfo .infoActions .btnWishlist button{
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+/* sectionDetails */
+.productDetails .sectionDetails{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+}
+.productDetails .sectionDetails h4{
+    color: var(--color-dark);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.productDetails .sectionDetails p{
+    color: var(--color-text-secondary);
+    font-size: 18px;
+}
+/* mayAlsoLike */
+.productDetails .mayAlsoLike {
+    border-top: 1px solid var( --color-border);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.productDetails .mayAlsoLike h4{
+    color: var(--color-dark);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.productDetails .mayAlsoLike .products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+@media (max-width: 1025px) {
+    .productDetails{
+        padding: 50px
+    }
+    .productDetails .sectionMain{
+        display: flex;
+        flex-direction: column;
+   }
+   .productDetails .sectionMain .productImages,
+   .productDetails .sectionMain .productInfo{
+    width: 90%;
+   }
+    .productDetails .mayAlsoLike .products {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+        margin: auto;
+    }
+    .container {
+        width: 95%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .productDetails .mayAlsoLike .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

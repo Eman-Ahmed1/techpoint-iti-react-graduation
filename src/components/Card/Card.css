@@ -8,7 +8,7 @@
     border: 1px solid var(--color-border);
     padding: 10px;
     transition: var(--transition-normal);
-    
+    display: block;
 }
 .card:hover{
     box-shadow: var(--shadow-md);
@@ -29,6 +29,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    color: var(--color-dark);
 }
 .card .card-image .heart:hover{
     color: red;

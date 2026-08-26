@@ -1,11 +1,13 @@
 import { CiHeart } from "react-icons/ci";
 import Button from "../Button/Button";
 import './Card.css'
+import { Link } from "react-router-dom";
 
 export default function Card({ product }) {
     return (
 
-        <div className="card">
+        
+        <Link to={`/products/${product.id}`} className="card">
 
             <div className="card-image">
 
@@ -31,7 +33,7 @@ export default function Card({ product }) {
                     <Button >ADD</Button>
                 </div>
             </div>
-        </div>
+        </Link>
 
 
     )
