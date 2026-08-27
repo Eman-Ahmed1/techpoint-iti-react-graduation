@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Button.css'
-export default function Button({ children, to }){
+export default function Button({ children, to , onClick  }){
     if(to){
         return (
             <Link to={to} className='btn'>{children}</Link>
@@ -8,7 +8,7 @@ export default function Button({ children, to }){
     }
     return(
         <>
-        <button className='btn'>{ children }</button>
+        <button className='btn' onClick={onClick }>{ children }</button>
         </>
     )
 }

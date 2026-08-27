@@ -13,6 +13,7 @@
 .card:hover{
     box-shadow: var(--shadow-md);
 }
+/* card-image */
 .card .card-image{
     position: relative;
     background-color: var(--color-background-secondary);
@@ -37,6 +38,7 @@
 .card .card-image img{
     height: 225px;
 }
+/*  card-content*/
 .card .card-content{
     display: flex;
     flex-direction: column;
@@ -51,16 +53,16 @@
 .card .card-content .itemRating{
     color:var(--color-primary);
 }
-.card .card-content .priceAndBtn{
+.card .priceAndBtn{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.card .card-content .priceAndBtn .itemPrice{
+.card .priceAndBtn .itemPrice{
     color:var(--color-text);
     font-weight: 600;
 }
-.card .card-content .priceAndBtn button{
+.card .priceAndBtn button{
     padding: 10px 15px ;
     font-weight: 600;
 }
