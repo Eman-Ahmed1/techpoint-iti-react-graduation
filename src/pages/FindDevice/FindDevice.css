@@ -1,0 +1,143 @@
+.find-device{
+    background-color: var(--color-background-secondary);
+}
+.find-device .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.find-device .container .header{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.find-device .container .header h1{
+    font-size: 45px;
+    /* margin-bottom: 20px; */
+}
+.find-device .container .header p{
+    font-size: 18px;
+    margin: 20px;
+    color: var(--color-text-secondary);
+    margin-bottom:60px ;
+}
+/* mainSection */
+.find-device .container .mainSection{
+    background-color: var(--color-background);
+    padding: 40px;
+}
+.find-device .container .mainSection .questions1,
+.find-device .container .mainSection .questions2,
+.find-device .container .mainSection .questions3{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin: 20px;
+}
+.find-device .container .mainSection .questions1 h3,
+.find-device .container .mainSection .questions2 h3,
+.find-device .container .mainSection .questions3 h3{
+
+}
+.find-device .container .mainSection .questions1 .ques1,
+.find-device .container .mainSection .questions2 .ques1,
+.find-device .container .mainSection .questions3 .ques1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.find-device .container .mainSection .questions1 .ques1 div,
+.find-device .container .mainSection .questions2 .ques1 div{
+    border-radius: var(--radius-md);
+    border:1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 22%;
+    height: 120px;
+}
+.find-device .container .mainSection .questions3 .ques1 div{
+    border-radius: var(--radius-md);
+    border:1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 30%;
+    height: 120px;
+}
+.find-device .container .mainSection .questions1 .ques1 div .icon{
+    background-color:#D3E4FE ;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    margin-bottom: 5px;
+}
+.find-device .container .mainSection .mass{
+    color: red;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+ .ques1 .active{
+    background-color: #FAFEF5;
+    border:1px solid green;
+    box-shadow: var(--shadow-md);
+}
+.find-device .container .mainSection .divBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommendations .filterProducts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.noResults{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    color: var(--color-text-secondary);
+    padding: 20px;
+}
+.noResults p{
+    width: 80%;
+}
+@media (max-width: 1025px) {
+     .recommendations .filterProducts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .container {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+      .recommendations .filterProducts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ques1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        .find-device .container .mainSection .questions1 .ques1 div,
+    .find-device .container .mainSection .questions2 .ques1 div,
+    .find-device .container .mainSection .questions3 .ques1 div {
+        width: 100%;
+    }
+}
