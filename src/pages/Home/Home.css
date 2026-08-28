@@ -1,3 +1,6 @@
+.homePage{
+    background-color: var(--color-background);
+}
 .homePage .heroSection{
     display: flex;
     align-items: center;

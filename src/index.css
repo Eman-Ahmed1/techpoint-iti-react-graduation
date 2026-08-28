@@ -33,15 +33,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,body,#root {
+  min-height: 100%;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 html{
    /* Enables smooth scrolling when navigating to page sections */
    scroll-behavior: smooth;
 }
 body{
   font-family: Arial, sans-serif;
-  background-color: var(--color-background);
+  background-color: var(--color-background-secondary);
   color: var(--color-text);
   line-height: 1.5;
+}
+.mainContent {
+    flex: 1;
 }
 button{
   cursor: pointer;

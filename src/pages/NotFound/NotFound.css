@@ -39,7 +39,7 @@
     max-width: 380px;
 
 }
-.notFoundCard .btn Button{
+.notFoundCard .btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,4 @@
     font-weight: 400 ;
     font-size: 14px ;
     box-shadow: var(--shadow-md);
-}
-.notFoundCard .btn Button:hover{
-    background-color: var(--color-primary-hover);
 }

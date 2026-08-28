@@ -2,6 +2,9 @@
     background-color: var(--color-background-secondary);
     padding: 10px;
     border-bottom: 1px solid #c7cbd1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .navbar .container{
     display: flex;
@@ -89,5 +92,9 @@
     border-radius: 100%;
 }
 .navbar .container .iconsNav a:hover{
-  background-color: var(--color-border);
+  background-color: #e8eef7;
+}
+.navbar .container .iconsNav a.active{
+    background-color: #e8eef7;
+
 }

@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../../services/products"
 import Button from "../../components/Button/Button";
 import './ProductDetails.css'
+import { addToCart } from "../../utils/cart"
 
 
 export default function ProductDetails() {
@@ -121,7 +122,7 @@ export default function ProductDetails() {
 
 
                             <div className="btnAdd">
-                                <Button><AiOutlineShopping />ADD TO CART</Button>
+                                <Button onClick={() => addToCart(product)}><AiOutlineShopping />ADD TO CART</Button>
                             </div>
 
                             <div className="btnWishlist">

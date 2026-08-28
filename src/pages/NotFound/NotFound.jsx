@@ -16,9 +16,8 @@ export default function NotFound() {
 
                 <p>The page you're looking for doesn't exist or may have been moved.</p>
 
-                <Link to="/" className="btn">
-                    <Button > <MdOutlineHome /> Back to Home </Button>
-                </Link>
+                
+                    <Button to="/"> <MdOutlineHome /> Back to Home </Button>
             </div>
         </div>
     )

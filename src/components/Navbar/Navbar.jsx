@@ -1,8 +1,9 @@
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { FaRegHeart } from "react-icons/fa";
+import { FaHeart, FaRegHeart } from "react-icons/fa6";
+import { MdShoppingCart } from "react-icons/md";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { IoMdPersonAdd } from "react-icons/io";
+import { IoPersonAddOutline } from "react-icons/io5";
 import './Navbar.css'
 import { NavLink } from "react-router-dom";
 
@@ -29,14 +30,14 @@ export default function Navbar() {
 
                 <div className="iconsNav">
 
-                    <Link to="/wishlist"> <FaRegHeart /></Link>
-                    <Link to="/cart"><MdOutlineShoppingCart /></Link>
-                    <Link to="/login"><IoMdPersonAdd /></Link>
+                    <NavLink to="/wishlist">{({ isActive }) => (isActive ? <FaHeart /> : <FaRegHeart />)}</NavLink>
+                    <NavLink to="/cart">{({ isActive }) => isActive ? <MdShoppingCart /> : <MdOutlineShoppingCart />}</NavLink >
+                    <NavLink to="/login"><IoPersonAddOutline /></NavLink >
 
 
                 </div>
             </div>
         </div>
-        
+
     )
 }

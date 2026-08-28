@@ -3,8 +3,19 @@ import Button from "../Button/Button";
 import './Card.css'
 import { Link } from "react-router-dom";
 import { addToCart } from "../../utils/cart"
+import { getWishlist } from "../../utils/wishlist"
+import { toggleWishlist } from "../../utils/wishlist.js"
+import { useState } from "react";
+import { FaHeart } from "react-icons/fa";
 
 export default function Card({ product }) {
+    const [isWishlisted, setIsWishlisted] = useState(()=>{
+        const wishlist = getWishlist();
+        return wishlist.some((item) =>{
+            return item.id === product.id
+        })
+    });
+
     return (
 
         <div className="card">
@@ -12,8 +23,13 @@ export default function Card({ product }) {
 
                 <div className="card-image">
 
-                    <div className="heart">
-                        <CiHeart />
+                    <div className="heart" onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        toggleWishlist(product);
+                        setIsWishlisted(!isWishlisted);
+                    }}>
+                        {isWishlisted?<FaHeart/> :<CiHeart/>}
                     </div>
 
                     <img src={product.thumbnail} alt={product.title} />
