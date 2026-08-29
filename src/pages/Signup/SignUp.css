@@ -1,0 +1,84 @@
+.singUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 50px;
+    background-color: var(--color-background-secondary);
+}
+.singUp .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.singUp .title a{
+    color: var(--color-text);
+}
+/* singUpCard */
+.singUp .singUpCard{
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    background-color: var(--color-background);
+}
+.singUp .singUpCard .desc{
+    color: var(--color-text-secondary);
+}
+.singUp .singUpCard form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.singUp .singUpCard form .name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px
+}
+.singUp .singUpCard form .formGroup input{
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+.singUp .singUpCard form .formGroup {
+    display: flex;
+    flex-direction: column;
+}
+.singUp .singUpCard form .formGroup .warning{
+    color: red;
+    font-size: 12px;
+}
+.singUp .singUpCard form .checkbox{
+    color: var(--color-text-secondary);
+}
+.singUp .singUpCard form .checkbox a{
+    color: var(--color-text);
+}
+.singUp .singUpCard form .checkbox a:hover{
+    border-bottom: 1px solid var(--color-text);
+}
+.singUp .singUpCard form .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.singUp .singUpCard .formFooter{
+    color: var(--color-text-secondary);
+}
+.singUp .singUpCard .formFooter a{
+    color: var(--color-text);
+    font-weight: 600;
+}
+.singUp .singUpCard .formFooter a:hover{
+    border-bottom: 1px solid var(--color-text);
+    padding-bottom: 5px;
+}

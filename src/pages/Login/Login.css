@@ -1,0 +1,79 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+    background-color: var(--color-background-secondary);
+}
+.login .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.login .title a{
+    color: var(--color-text);
+}
+/* loginCard */
+.login .loginCard{
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    width: 50%;
+    background-color: var(--color-background);
+}
+.login .loginCard .desc{
+    color: var(--color-text-secondary);
+    padding-bottom: 10px;
+}
+.login .loginCard form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login .loginCard form .formGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.login .loginCard form .formGroup input{
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+.login .loginCard form .formGroup .warning{
+    color: red;
+    font-size: 12px;
+}
+.login .loginCard form .formGroup .passwordLabel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login .loginCard form .formGroup .passwordLabel a{
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+.login .loginCard form .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login .loginCard .formFooter{
+    color: var(--color-text-secondary);
+}
+.login .loginCard .formFooter a{
+    color: var(--color-text);
+    font-weight: 600;
+}
+.login .loginCard .formFooter a:hover{
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}

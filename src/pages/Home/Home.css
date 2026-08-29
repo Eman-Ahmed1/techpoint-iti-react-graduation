@@ -56,6 +56,20 @@
 @media (max-Width: 1190px){
     .homePage .heroSection{
         flex-direction: column;
+        width: 80%;
+        margin: auto;
+        
+    }.heroSection .heroImg {
+       display: flex;
+       align-items: center;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .heroSection .heroImg img{
+        width: 80%;
+        max-width: 800px;
     }
 }
 /* Category */
@@ -143,7 +157,7 @@
     background-color: var(--color-background);
     margin: 30px;
 }
-.homePage .featuredProducts .viewAll button:hover{
+.homePage .featuredProducts .viewAll .btn:hover{
     background-color: var(--color-primary);
 }
 @media (max-width: 1190px) {
